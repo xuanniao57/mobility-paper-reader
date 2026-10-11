@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#a42b32"><meta name="robots" content="noindex,nofollow"><title>行读 · 人类移动文献</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<p style="text-align:center;margin:10px"><a href="network.html">共享引用网络 · 期刊与年代筛选 →</a></p>
+<header class="top"><a class="brand" href="#" aria-label="行读首页">行读<span>MOBILITY PAPERS</span></a><button id="libraryBtn" class="quiet" aria-expanded="false" aria-controls="library">文献目录 <span id="total">—</span></button></header>
+<section id="library" hidden aria-label="文献目录"><div class="libhead"><h2>你的移动研究书架</h2><button id="closeLibrary" aria-label="关闭目录">关闭</button></div><input id="search" type="search" placeholder="搜索题名、作者、期刊或关键词" aria-label="搜索文献"><div class="filters"><select id="journal" aria-label="按期刊筛选"><option value="">全部期刊</option></select><select id="scope" aria-label="按阅读状态筛选"><option value="abstract">有作者摘要</option><option value="all">全部文献</option><option value="saved">我的收藏</option><option value="unread">尚未读完</option><option value="figures">附有图表</option></select></div><p id="coverage" class="muted"></p><div id="list"></div><button id="exportProgress" class="quiet">导出阅读进度</button><a class="quiet" href="obsidian-notes.zip" download>下载 Obsidian 笔记包</a></section>
+<main id="reader" aria-live="polite"><p class="loading">正在打开书架…</p></main>
+<footer class="nav"><button id="prev" aria-label="上一篇论文">← 上一篇</button><div><span id="position">—</span><small>左右滑动切换 · 上下阅读</small></div><button id="next" aria-label="下一篇论文">下一篇 →</button></footer>
+<div id="toast" role="status"></div>
+<dialog id="lightbox"><button id="closeImage" aria-label="关闭大图">关闭大图 ×</button><img id="largeImage" alt="论文图表放大查看"><p id="largeCaption"></p></dialog>
+<script src="app.js" defer></script></body></html>
